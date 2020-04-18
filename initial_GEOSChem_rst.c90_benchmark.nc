@@ -1,1 +1,0 @@
-/ExtData/SPC_RESTARTS/initial_GEOSChem_rst.c90_benchmark.nc
