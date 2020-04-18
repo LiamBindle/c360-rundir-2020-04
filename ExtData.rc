@@ -1418,6 +1418,33 @@ MOH_SEAWATER   kgC/m3 N Y -                     none none MOH        ./MainDataD
 # --- SOILNOX emissions (Extension 104) ---
 # Off by default. Use offline soil NOx emissions above.
 #==============================================================================
+SOILNOX_FERT     kg/m3 N Y - none none FERT         ./MainDataDir/SOILNOX/v2014-07/soilNOx.fert_res.generic.05x05.nc
+SOILNOX_LANDK1   1     N Y - none none LANDFRAC_K01 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK2   1     N Y - none none LANDFRAC_K02 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK3   1     N Y - none none LANDFRAC_K03 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK4   1     N Y - none none LANDFRAC_K04 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK5   1     N Y - none none LANDFRAC_K05 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK6   1     N Y - none none LANDFRAC_K06 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK7   1     N Y - none none LANDFRAC_K07 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK8   1     N Y - none none LANDFRAC_K08 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK9   1     N Y - none none LANDFRAC_K09 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK10  1     N Y - none none LANDFRAC_K10 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK11  1     N Y - none none LANDFRAC_K11 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK12  1     N Y - none none LANDFRAC_K12 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK13  1     N Y - none none LANDFRAC_K13 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK14  1     N Y - none none LANDFRAC_K14 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK15  1     N Y - none none LANDFRAC_K15 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK16  1     N Y - none none LANDFRAC_K16 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK17  1     N Y - none none LANDFRAC_K17 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK18  1     N Y - none none LANDFRAC_K18 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK19  1     N Y - none none LANDFRAC_K19 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK20  1     N Y - none none LANDFRAC_K20 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK21  1     N Y - none none LANDFRAC_K21 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK22  1     N Y - none none LANDFRAC_K22 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK23  1     N Y - none none LANDFRAC_K23 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_LANDK24  1     N Y - none none LANDFRAC_K24 ./MainDataDir/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc
+SOILNOX_ARID     1     N Y - none none ARID         ./MainDataDir/SOILNOX/v2014-07/soilNOx.climate.generic.05x05.nc     
+SOILNOX_NONARID  1     N Y - none none NON_ARID     ./MainDataDir/SOILNOX/v2014-07/soilNOx.climate.generic.05x05.nc 
 
 #==============================================================================
 # --- Dust emissions using DEAD model (Extension 105) ---
