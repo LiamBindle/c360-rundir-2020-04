@@ -106,7 +106,7 @@ Warnings:                    1
     --> OFFLINE_DUST           :       true
     --> OFFLINE_BIOGENICVOC    :       true
     --> OFFLINE_SEASALT        :       true
-    --> OFFLINE_SOILNOX        :       true
+    --> OFFLINE_SOILNOX        :       false
 # ----- NON-EMISSIONS DATA ------------------
     --> UVALBEDO               :       true
     --> CCM_STRAT_Bry          :       true
@@ -128,8 +128,8 @@ Warnings:                    1
     --> LUT source dir         :       $ROOT/PARANOX/v2015-02
 103     LightNOx               : on    NO
     --> CDF table              :       $ROOT/LIGHTNOX/v2014-07/light_dist.ott2010.dat
-104     SoilNOx                : off   NO
-    --> Use fertilizer NOx     :       true
+104     SoilNOx                : on    NO
+    --> Use fertilizer NOx     :       false
 105     DustDead               : off   DST1/DST2/DST3/DST4
 # Replace @MASS_TUNING_FACTOR with value matching run resolution
 #C24  --> Mass tuning factor     : 6.0e-4
@@ -1089,8 +1089,8 @@ Warnings:                    1
 0 CEDS_NO_AGR     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_agr            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
 0 CEDS_NO_ENE     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_ene            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
 0 CEDS_NO_IND     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_ind            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
-0 CEDS_NO_TRA     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_tra            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
-0 CEDS_NO_RCO     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_rco            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
+0 CEDS_NO_ROAD     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_road            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
+0 CEDS_NO_RCOR     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_rcor            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
 0 CEDS_NO_SLV     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_slv            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
 0 CEDS_NO_WST     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_wst            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
 0 CEDS_CO_AGR     /McDuffie20/CEDS/2020_v1/$YYYY/CO-em-total-anthro_CEDS_$YYYY.nc            CO_agr            1970-2017/1-12/1/0 C xy kg/m2/s CO    26        1 5
@@ -1100,10 +1100,10 @@ Warnings:                    1
 0 CEDS_SOAP_ENE   -                                                                    -                 -                  - -  -       SOAP  26/280    1 5
 0 CEDS_CO_IND     /McDuffie20/CEDS/2020_v1/$YYYY/CO-em-total-anthro_CEDS_$YYYY.nc            CO_ind            1970-2017/1-12/1/0 C xy kg/m2/s CO    26        1 5
 0 CEDS_SOAP_IND   -                                                                    -                 -                  - -  -       SOAP  26/280    1 5
-0 CEDS_CO_TRA     /McDuffie20/CEDS/2020_v1/$YYYY/CO-em-total-anthro_CEDS_$YYYY.nc            CO_tra            1970-2017/1-12/1/0 C xy kg/m2/s CO    26        1 5
-0 CEDS_SOAP_TRA   -                                                                    -                 -                  - -  -       SOAP  26/280    1 5
-0 CEDS_CO_RCO     /McDuffie20/CEDS/2020_v1/$YYYY/CO-em-total-anthro_CEDS_$YYYY.nc            CO_rco            1970-2017/1-12/1/0 C xy kg/m2/s CO    26        1 5
-0 CEDS_SOAP_RCO   -                                                                    -                 -                  - -  -       SOAP  26/280    1 5
+0 CEDS_CO_ROAD     /McDuffie20/CEDS/2020_v1/$YYYY/CO-em-total-anthro_CEDS_$YYYY.nc            CO_road            1970-2017/1-12/1/0 C xy kg/m2/s CO    26        1 5
+0 CEDS_SOAP_ROAD   -                                                                    -                 -                  - -  -       SOAP  26/280    1 5
+0 CEDS_CO_RCOR     /McDuffie20/CEDS/2020_v1/$YYYY/CO-em-total-anthro_CEDS_$YYYY.nc            CO_rcor            1970-2017/1-12/1/0 C xy kg/m2/s CO    26        1 5
+0 CEDS_SOAP_RCOR   -                                                                    -                 -                  - -  -       SOAP  26/280    1 5
 0 CEDS_CO_SLV     /McDuffie20/CEDS/2020_v1/$YYYY/CO-em-total-anthro_CEDS_$YYYY.nc            CO_slv            1970-2017/1-12/1/0 C xy kg/m2/s CO    26        1 5
 0 CEDS_SOAP_SLV   -                                                                    -                 -                  - -  -       SOAP  26/280    1 5
 0 CEDS_CO_WST     /McDuffie20/CEDS/2020_v1/$YYYY/CO-em-total-anthro_CEDS_$YYYY.nc            CO_wst            1970-2017/1-12/1/0 C xy kg/m2/s CO    26        1 5
@@ -1118,12 +1118,12 @@ Warnings:                    1
 0 CEDS_SO2_IND    /McDuffie20/CEDS/2020_v1/$YYYY/SO2-em-total-anthro_CEDS_$YYYY.nc           SO2_ind           1970-2017/1-12/1/0 C xy kg/m2/s SO2   -         1 5
 0 CEDS_SO4_IND    -                                                                    -                 -                  - -  -       SO4   63        1 5
 0 CEDS_pFe_IND    -                                                                    -                 -                  - -  -       pFe   66        1 5
-0 CEDS_SO2_TRA    /McDuffie20/CEDS/2020_v1/$YYYY/SO2-em-total-anthro_CEDS_$YYYY.nc           SO2_tra           1970-2017/1-12/1/0 C xy kg/m2/s SO2   -         1 5
-0 CEDS_SO4_TRA    -                                                                    -                 -                  - -  -       SO4   63        1 5
-0 CEDS_pFe_TRA    -                                                                    -                 -                  - -  -       pFe   66        1 5
-0 CEDS_SO2_RCO    /McDuffie20/CEDS/2020_v1/$YYYY/SO2-em-total-anthro_CEDS_$YYYY.nc           SO2_rco           1970-2017/1-12/1/0 C xy kg/m2/s SO2   -         1 5
-0 CEDS_SO4_RCO    -                                                                    -                 -                  - -  -       SO4   63        1 5
-0 CEDS_pFe_RCO    -                                                                    -                 -                  - -  -       pFe   66        1 5
+0 CEDS_SO2_ROAD    /McDuffie20/CEDS/2020_v1/$YYYY/SO2-em-total-anthro_CEDS_$YYYY.nc           SO2_road           1970-2017/1-12/1/0 C xy kg/m2/s SO2   -         1 5
+0 CEDS_SO4_ROAD    -                                                                    -                 -                  - -  -       SO4   63        1 5
+0 CEDS_pFe_ROAD    -                                                                    -                 -                  - -  -       pFe   66        1 5
+0 CEDS_SO2_RCOR    /McDuffie20/CEDS/2020_v1/$YYYY/SO2-em-total-anthro_CEDS_$YYYY.nc           SO2_rcor           1970-2017/1-12/1/0 C xy kg/m2/s SO2   -         1 5
+0 CEDS_SO4_RCOR    -                                                                    -                 -                  - -  -       SO4   63        1 5
+0 CEDS_pFe_RCOR    -                                                                    -                 -                  - -  -       pFe   66        1 5
 0 CEDS_SO2_SLV    /McDuffie20/CEDS/2020_v1/$YYYY/SO2-em-total-anthro_CEDS_$YYYY.nc           SO2_slv           1970-2017/1-12/1/0 C xy kg/m2/s SO2   -         1 5
 0 CEDS_SO4_SLV    -                                                                    -                 -                  - -  -       SO4   63        1 5
 0 CEDS_pFe_SLV    -                                                                    -                 -                  - -  -       pFe   66        1 5
@@ -1134,8 +1134,8 @@ Warnings:                    1
 0 CEDS_NH3_AGR    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_agr           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
 0 CEDS_NH3_ENE    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_ene           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
 0 CEDS_NH3_IND    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_ind           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
-0 CEDS_NH3_TRA    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_tra           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
-0 CEDS_NH3_RCO    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_rco           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
+0 CEDS_NH3_ROAD    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_road           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
+0 CEDS_NH3_RCOR    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_rcor           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
 0 CEDS_NH3_SLV    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_slv           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
 0 CEDS_NH3_WST    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_wst           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
 
@@ -1145,10 +1145,10 @@ Warnings:                    1
 0 CEDS_BCPO_ENE   -                                                                    -                 -                  - -  -       BCPO  71        1 5
 0 CEDS_BCPI_IND   /McDuffie20/CEDS/2020_v1/$YYYY/BC-em-total-anthro_CEDS_$YYYY.nc            BC_ind            1970-2017/1-12/1/0 C xy kg/m2/s BCPI  70        1 5
 0 CEDS_BCPO_IND   -                                                                    -                 -                  - -  -       BCPO  71        1 5
-0 CEDS_BCPI_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/BC-em-total-anthro_CEDS_$YYYY.nc            BC_tra            1970-2017/1-12/1/0 C xy kg/m2/s BCPI  70        1 5
-0 CEDS_BCPO_TRA   -                                                                    -                 -                  - -  -       BCPO  71        1 5
-0 CEDS_BCPI_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/BC-em-total-anthro_CEDS_$YYYY.nc            BC_rco            1970-2017/1-12/1/0 C xy kg/m2/s BCPI  70        1 5
-0 CEDS_BCPO_RCO   -                                                                    -                 -                  - -  -       BCPO  71        1 5
+0 CEDS_BCPI_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/BC-em-total-anthro_CEDS_$YYYY.nc            BC_road            1970-2017/1-12/1/0 C xy kg/m2/s BCPI  70        1 5
+0 CEDS_BCPO_ROAD   -                                                                    -                 -                  - -  -       BCPO  71        1 5
+0 CEDS_BCPI_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/BC-em-total-anthro_CEDS_$YYYY.nc            BC_rcor            1970-2017/1-12/1/0 C xy kg/m2/s BCPI  70        1 5
+0 CEDS_BCPO_RCOR   -                                                                    -                 -                  - -  -       BCPO  71        1 5
 0 CEDS_BCPI_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/BC-em-total-anthro_CEDS_$YYYY.nc            BC_slv            1970-2017/1-12/1/0 C xy kg/m2/s BCPI  70        1 5
 0 CEDS_BCPO_SLV   -                                                                    -                 -                  - -  -       BCPO  71        1 5
 0 CEDS_BCPI_WST   /McDuffie20/CEDS/2020_v1/$YYYY/BC-em-total-anthro_CEDS_$YYYY.nc            BC_wst            1970-2017/1-12/1/0 C xy kg/m2/s BCPI  70        1 5
@@ -1166,14 +1166,14 @@ Warnings:                    1
 0 CEDS_OCPO_IND   -                                                                    -                 -                  - -  -       OCPO  73        1 5
 0 CEDS_POG1_IND   -                                                                    -                 -                  - -  -       POG1  73/74/76  1 5
 0 CEDS_POG2_IND   -                                                                    -                 -                  - -  -       POG2  73/74/77  1 5
-0 CEDS_OCPI_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/OC-em-total-anthro_CEDS_$YYYY.nc            OC_tra            1970-2017/1-12/1/0 C xy kg/m2/s OCPI  72        1 5
-0 CEDS_OCPO_TRA   -                                                                    -                 -                  - -  -       OCPO  73        1 5
-0 CEDS_POG1_TRA   -                                                                    -                 -                  - -  -       POG1  73/74/76  1 5
-0 CEDS_POG2_TRA   -                                                                    -                 -                  - -  -       POG2  73/74/77  1 5
-0 CEDS_OCPI_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/OC-em-total-anthro_CEDS_$YYYY.nc            OC_rco            1970-2017/1-12/1/0 C xy kg/m2/s OCPI  72        1 5
-0 CEDS_OCPO_RCO   -                                                                    -                 -                  - -  -       OCPO  73        1 5
-0 CEDS_POG1_RCO   -                                                                    -                 -                  - -  -       POG1  73/74/76  1 5
-0 CEDS_POG2_RCO   -                                                                    -                 -                  - -  -       POG2  73/74/77  1 5
+0 CEDS_OCPI_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/OC-em-total-anthro_CEDS_$YYYY.nc            OC_road            1970-2017/1-12/1/0 C xy kg/m2/s OCPI  72        1 5
+0 CEDS_OCPO_ROAD   -                                                                    -                 -                  - -  -       OCPO  73        1 5
+0 CEDS_POG1_ROAD   -                                                                    -                 -                  - -  -       POG1  73/74/76  1 5
+0 CEDS_POG2_ROAD   -                                                                    -                 -                  - -  -       POG2  73/74/77  1 5
+0 CEDS_OCPI_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/OC-em-total-anthro_CEDS_$YYYY.nc            OC_rcor            1970-2017/1-12/1/0 C xy kg/m2/s OCPI  72        1 5
+0 CEDS_OCPO_RCOR   -                                                                    -                 -                  - -  -       OCPO  73        1 5
+0 CEDS_POG1_RCOR   -                                                                    -                 -                  - -  -       POG1  73/74/76  1 5
+0 CEDS_POG2_RCOR   -                                                                    -                 -                  - -  -       POG2  73/74/77  1 5
 0 CEDS_OCPI_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/OC-em-total-anthro_CEDS_$YYYY.nc            OC_slv            1970-2017/1-12/1/0 C xy kg/m2/s OCPI  72        1 5
 0 CEDS_OCPO_SLV   -                                                                    -                 -                  - -  -       OCPO  73        1 5
 0 CEDS_POG1_SLV   -                                                                    -                 -                  - -  -       POG1  73/74/76  1 5
@@ -1187,8 +1187,8 @@ Warnings:                    1
 #0 CEDS_CO2_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_agr           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
 #0 CEDS_CO2_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_ene           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
 #0 CEDS_CO2_IND   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_ind           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
-#0 CEDS_CO2_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_tra           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
-#0 CEDS_CO2_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_rco           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
+#0 CEDS_CO2_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_road           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
+#0 CEDS_CO2_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_rcor           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
 #0 CEDS_CO2_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_slv           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
 #0 CEDS_CO2_WST   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_wst           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
 
@@ -1197,8 +1197,8 @@ Warnings:                    1
 #0 CEDS_CH4_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_agr           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
 #0 CEDS_CH4_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_ene           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
 #0 CEDS_CH4_IND   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_ind           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
-#0 CEDS_CH4_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_tra           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
-#0 CEDS_CH4_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_rco           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
+#0 CEDS_CH4_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_road           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
+#0 CEDS_CH4_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_rcor           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
 #0 CEDS_CH4_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_slv           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
 #0 CEDS_CH4_WST   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_wst           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
 
@@ -1212,12 +1212,12 @@ Warnings:                    1
 0 CEDS_MOH_IND    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_ind           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
 0 CEDS_EOH_IND    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
 0 CEDS_ROH_IND    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
-0 CEDS_MOH_TRA    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_tra           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
-0 CEDS_EOH_TRA    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
-0 CEDS_ROH_TRA    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
-0 CEDS_MOH_RCO    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_rco           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
-0 CEDS_EOH_RCO    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
-0 CEDS_ROH_RCO    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
+0 CEDS_MOH_ROAD    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_road           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
+0 CEDS_EOH_ROAD    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
+0 CEDS_ROH_ROAD    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
+0 CEDS_MOH_RCOR    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_rcor           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
+0 CEDS_EOH_RCOR    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
+0 CEDS_ROH_RCOR    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
 0 CEDS_MOH_SLV    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_slv           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
 0 CEDS_EOH_SLV    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
 0 CEDS_ROH_SLV    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
@@ -1228,122 +1228,225 @@ Warnings:                    1
 0 CEDS_C2H6_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_agr          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
 0 CEDS_C2H6_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_ene          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
 0 CEDS_C2H6_IND   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_ind          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
-0 CEDS_C2H6_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_tra          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
-0 CEDS_C2H6_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_rco          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
+0 CEDS_C2H6_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_road          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
+0 CEDS_C2H6_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_rcor          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
 0 CEDS_C2H6_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_slv          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
 0 CEDS_C2H6_WST   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_wst          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
 
 0 CEDS_C3H8_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_agr          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
 0 CEDS_C3H8_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_ene          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
 0 CEDS_C3H8_IND   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_ind          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
-0 CEDS_C3H8_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_tra          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
-0 CEDS_C3H8_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_rco          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
+0 CEDS_C3H8_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_road          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
+0 CEDS_C3H8_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_rcor          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
 0 CEDS_C3H8_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_slv          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
 0 CEDS_C3H8_WST   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_wst          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
 
 0 CEDS_C4H10_AGR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_agr  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C4H10_ENE  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_ene  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C4H10_IND  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_ind  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
-0 CEDS_C4H10_TRA  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_tra  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
-0 CEDS_C4H10_RCO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_rco  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C4H10_ROAD  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_road  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C4H10_RCOR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_rcor  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C4H10_SLV  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_slv  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C4H10_WST  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_wst  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 
 0 CEDS_C5H12_AGR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_agr 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C5H12_ENE  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_ene 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C5H12_IND  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_ind 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
-0 CEDS_C5H12_TRA  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_tra 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
-0 CEDS_C5H12_RCO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_rco 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C5H12_ROAD  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_road 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C5H12_RCOR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_rcor 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C5H12_SLV  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_slv 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C5H12_WST  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_wst 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 
 0 CEDS_C6H14_AGR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_agr  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C6H14_ENE  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_ene  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C6H14_IND  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_ind  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
-0 CEDS_C6H14_TRA  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_tra  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
-0 CEDS_C6H14_RCO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_rco  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C6H14_ROAD  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_road  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C6H14_RCOR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_rcor  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C6H14_SLV  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_slv  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 0 CEDS_C6H14_WST  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_wst  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
 
 0 CEDS_C2H4_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_agr          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
 0 CEDS_C2H4_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_ene          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
 0 CEDS_C2H4_IND   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_ind          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
-0 CEDS_C2H4_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_tra          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
-0 CEDS_C2H4_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_rco          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
+0 CEDS_C2H4_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_road          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
+0 CEDS_C2H4_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_rcor          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
 0 CEDS_C2H4_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_slv          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
 0 CEDS_C2H4_WST   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_wst          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
 
 0 CEDS_PRPE_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_agr          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
 0 CEDS_PRPE_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_ene          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
 0 CEDS_PRPE_IND   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_ind          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
-0 CEDS_PRPE_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_tra          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
-0 CEDS_PRPE_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_rco          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
+0 CEDS_PRPE_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_road          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
+0 CEDS_PRPE_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_rcor          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
 0 CEDS_PRPE_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_slv          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
 0 CEDS_PRPE_WST   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_wst          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
 
 0 CEDS_C2H2_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_agr          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
 0 CEDS_C2H2_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_ene          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
 0 CEDS_C2H2_IND   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_ind          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
-0 CEDS_C2H2_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_tra          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
-0 CEDS_C2H2_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_rco          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
+0 CEDS_C2H2_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_road          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
+0 CEDS_C2H2_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_rcor          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
 0 CEDS_C2H2_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_slv          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
 0 CEDS_C2H2_WST   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_wst          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
 
 0 CEDS_BENZ_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_agr          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
 0 CEDS_BENZ_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_ene          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
 0 CEDS_BENZ_IND   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_ind          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
-0 CEDS_BENZ_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_tra          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
-0 CEDS_BENZ_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_rco          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
+0 CEDS_BENZ_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_road          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
+0 CEDS_BENZ_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_rcor          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
 0 CEDS_BENZ_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_slv          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
 0 CEDS_BENZ_WST   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_wst          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
 
 0 CEDS_TOLU_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_agr          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
 0 CEDS_TOLU_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_ene          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
 0 CEDS_TOLU_IND   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_ind          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
-0 CEDS_TOLU_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_tra          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
-0 CEDS_TOLU_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_rco          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
+0 CEDS_TOLU_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_road          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
+0 CEDS_TOLU_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_rcor          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
 0 CEDS_TOLU_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_slv          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
 0 CEDS_TOLU_WST   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_wst          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
 
 0 CEDS_XYLE_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_agr          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
 0 CEDS_XYLE_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_ene          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
 0 CEDS_XYLE_IND   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_ind          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
-0 CEDS_XYLE_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_tra          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
-0 CEDS_XYLE_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_rco          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
+0 CEDS_XYLE_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_road          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
+0 CEDS_XYLE_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_rcor          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
 0 CEDS_XYLE_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_slv          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
 0 CEDS_XYLE_WST   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_wst          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
 
 0 CEDS_CH2O_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_agr          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
 0 CEDS_CH2O_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_ene          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
 0 CEDS_CH2O_IND   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_ind          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
-0 CEDS_CH2O_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_tra          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
-0 CEDS_CH2O_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_rco          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
+0 CEDS_CH2O_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_road          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
+0 CEDS_CH2O_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_rcor          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
 0 CEDS_CH2O_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_slv          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
 0 CEDS_CH2O_WST   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_wst          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
 
 0 CEDS_ALD2_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_agr          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
 0 CEDS_ALD2_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_ene          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
 0 CEDS_ALD2_IND   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_ind          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
-0 CEDS_ALD2_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_tra          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
-0 CEDS_ALD2_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_rco          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
+0 CEDS_ALD2_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_road          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
+0 CEDS_ALD2_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_rcor          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
 0 CEDS_ALD2_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_slv          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
 0 CEDS_ALD2_WST   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_wst          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
 
 0 CEDS_MEK_AGR    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_agr           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
 0 CEDS_MEK_ENE    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_ene           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
 0 CEDS_MEK_IND    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_ind           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
-0 CEDS_MEK_TRA    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_tra           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
-0 CEDS_MEK_RCO    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_rco           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
+0 CEDS_MEK_ROAD    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_road           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
+0 CEDS_MEK_RCOR    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_rcor           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
 0 CEDS_MEK_SLV    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_slv           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
 0 CEDS_MEK_WST    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_wst           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
 
 0 CEDS_HCOOH_AGR  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_agr         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
 0 CEDS_HCOOH_ENE  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_ene         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
 0 CEDS_HCOOH_IND  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_ind         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
-0 CEDS_HCOOH_TRA  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_tra         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
-0 CEDS_HCOOH_RCO  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_rco         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
+0 CEDS_HCOOH_ROAD  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_road         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
+0 CEDS_HCOOH_RCOR  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_rcor         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
 0 CEDS_HCOOH_SLV  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_slv         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
 0 CEDS_HCOOH_WST  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_wst         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
+
+0 CEDS_NO_NRTR     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_nrtr            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
+0 CEDS_CO_NRTR     /McDuffie20/CEDS/2020_v1/$YYYY/CO-em-total-anthro_CEDS_$YYYY.nc            CO_nrtr            1970-2017/1-12/1/0 C xy kg/m2/s CO    26        1 5
+0 CEDS_SOAP_NRTR   -                                                                    -                 -                  - -  -       SOAP  26/280    1 5
+0 CEDS_SO2_NRTR    /McDuffie20/CEDS/2020_v1/$YYYY/SO2-em-total-anthro_CEDS_$YYYY.nc           SO2_nrtr           1970-2017/1-12/1/0 C xy kg/m2/s SO2   -         1 5
+0 CEDS_SO4_NRTR    -                                                                    -                 -                  - -  -       SO4   63        1 5
+0 CEDS_pFe_NRTR    -                                                                    -                 -                  - -  -       pFe   66        1 5
+0 CEDS_NH3_NRTR    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_nrtr           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
+0 CEDS_BCPI_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/BC-em-total-anthro_CEDS_$YYYY.nc            BC_nrtr            1970-2017/1-12/1/0 C xy kg/m2/s BCPI  70        1 5
+0 CEDS_BCPO_NRTR   -                                                                    -                 -                  - -  -       BCPO  71        1 5
+0 CEDS_OCPI_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/OC-em-total-anthro_CEDS_$YYYY.nc            OC_nrtr            1970-2017/1-12/1/0 C xy kg/m2/s OCPI  72        1 5
+0 CEDS_OCPO_NRTR   -                                                                    -                 -                  - -  -       OCPO  73        1 5
+0 CEDS_POG1_NRTR   -                                                                    -                 -                  - -  -       POG1  73/74/76  1 5
+0 CEDS_POG2_NRTR   -                                                                    -                 -                  - -  -       POG2  73/74/77  1 5
+#0 CEDS_CO2_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_nrtr           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
+#0 CEDS_CH4_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_nrtr           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
+0 CEDS_MOH_NRTR    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_nrtr           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
+0 CEDS_EOH_NRTR    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
+0 CEDS_ROH_NRTR    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
+0 CEDS_C2H6_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
+0 CEDS_C3H8_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
+0 CEDS_C4H10_NRTR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_nrtr  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C5H12_NRTR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_nrtr 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C6H14_NRTR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_nrtr  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C2H4_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
+0 CEDS_PRPE_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
+0 CEDS_C2H2_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
+0 CEDS_BENZ_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
+0 CEDS_TOLU_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
+0 CEDS_XYLE_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
+0 CEDS_CH2O_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
+0 CEDS_ALD2_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
+0 CEDS_MEK_NRTR    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_nrtr           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
+0 CEDS_HCOOH_NRTR  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_nrtr         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
+
+0 CEDS_NO_RCOC     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_rcoc            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
+0 CEDS_CO_RCOC     /McDuffie20/CEDS/2020_v1/$YYYY/CO-em-total-anthro_CEDS_$YYYY.nc            CO_rcoc            1970-2017/1-12/1/0 C xy kg/m2/s CO    26        1 5
+0 CEDS_SOAP_RCOC   -                                                                    -                 -                  - -  -       SOAP  26/280    1 5
+0 CEDS_SO2_RCOC    /McDuffie20/CEDS/2020_v1/$YYYY/SO2-em-total-anthro_CEDS_$YYYY.nc           SO2_rcoc           1970-2017/1-12/1/0 C xy kg/m2/s SO2   -         1 5
+0 CEDS_SO4_RCOC    -                                                                    -                 -                  - -  -       SO4   63        1 5
+0 CEDS_pFe_RCOC    -                                                                    -                 -                  - -  -       pFe   66        1 5
+0 CEDS_NH3_RCOC    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_rcoc           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
+0 CEDS_BCPI_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/BC-em-total-anthro_CEDS_$YYYY.nc            BC_rcoc            1970-2017/1-12/1/0 C xy kg/m2/s BCPI  70        1 5
+0 CEDS_BCPO_RCOC   -                                                                    -                 -                  - -  -       BCPO  71        1 5
+0 CEDS_OCPI_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/OC-em-total-anthro_CEDS_$YYYY.nc            OC_rcoc            1970-2017/1-12/1/0 C xy kg/m2/s OCPI  72        1 5
+0 CEDS_OCPO_RCOC   -                                                                    -                 -                  - -  -       OCPO  73        1 5
+0 CEDS_POG1_RCOC   -                                                                    -                 -                  - -  -       POG1  73/74/76  1 5
+0 CEDS_POG2_RCOC   -                                                                    -                 -                  - -  -       POG2  73/74/77  1 5
+#0 CEDS_CO2_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_rcoc           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
+#0 CEDS_CH4_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_rcoc           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
+0 CEDS_MOH_RCOC    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_rcoc           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
+0 CEDS_EOH_RCOC    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
+0 CEDS_ROH_RCOC    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
+0 CEDS_C2H6_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
+0 CEDS_C3H8_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
+0 CEDS_C4H10_RCOC  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_rcoc  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C5H12_RCOC  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_rcoc 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C6H14_RCOC  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_rcoc  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C2H4_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
+0 CEDS_PRPE_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
+0 CEDS_C2H2_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
+0 CEDS_BENZ_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
+0 CEDS_TOLU_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
+0 CEDS_XYLE_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
+0 CEDS_CH2O_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
+0 CEDS_ALD2_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
+0 CEDS_MEK_RCOC    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_rcoc           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
+0 CEDS_HCOOH_RCOC  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_rcoc         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
+
+0 CEDS_NO_RCOO     /McDuffie20/CEDS/2020_v1/$YYYY/NO-em-total-anthro_CEDS_$YYYY.nc            NO_rcoo            1970-2017/1-12/1/0 C xy kg/m2/s NO    25        1 5
+0 CEDS_CO_RCOO     /McDuffie20/CEDS/2020_v1/$YYYY/CO-em-total-anthro_CEDS_$YYYY.nc            CO_rcoo            1970-2017/1-12/1/0 C xy kg/m2/s CO    26        1 5
+0 CEDS_SOAP_RCOO   -                                                                    -                 -                  - -  -       SOAP  26/280    1 5
+0 CEDS_SO2_RCOO    /McDuffie20/CEDS/2020_v1/$YYYY/SO2-em-total-anthro_CEDS_$YYYY.nc           SO2_rcoo           1970-2017/1-12/1/0 C xy kg/m2/s SO2   -         1 5
+0 CEDS_SO4_RCOO    -                                                                    -                 -                  - -  -       SO4   63        1 5
+0 CEDS_pFe_RCOO    -                                                                    -                 -                  - -  -       pFe   66        1 5
+0 CEDS_NH3_RCOO    /McDuffie20/CEDS/2020_v1/$YYYY/NH3-em-total-anthro_CEDS_$YYYY.nc           NH3_rcoo           1970-2017/1-12/1/0 C xy kg/m2/s NH3   -         1 5
+0 CEDS_BCPI_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/BC-em-total-anthro_CEDS_$YYYY.nc            BC_rcoo            1970-2017/1-12/1/0 C xy kg/m2/s BCPI  70        1 5
+0 CEDS_BCPO_RCOO   -                                                                    -                 -                  - -  -       BCPO  71        1 5
+0 CEDS_OCPI_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/OC-em-total-anthro_CEDS_$YYYY.nc            OC_rcoo            1970-2017/1-12/1/0 C xy kg/m2/s OCPI  72        1 5
+0 CEDS_OCPO_RCOO   -                                                                    -                 -                  - -  -       OCPO  73        1 5
+0 CEDS_POG1_RCOO   -                                                                    -                 -                  - -  -       POG1  73/74/76  1 5
+0 CEDS_POG2_RCOO   -                                                                    -                 -                  - -  -       POG2  73/74/77  1 5
+#0 CEDS_CO2_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/CO2-em-total-anthro_CEDS_$YYYY.nc           CO2_rcoo           1970-2017/1-12/1/0 C xy kg/m2/s CO2   -         1 5
+#0 CEDS_CH4_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/CH4-em-total-anthro_CEDS_$YYYY.nc           CH4_rcoo           1970-2014/1-12/1/0 C xy kg/m2/s CH4   -         1 5
+0 CEDS_MOH_RCOO    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_rcoo           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
+0 CEDS_EOH_RCOO    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
+0 CEDS_ROH_RCOO    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
+0 CEDS_C2H6_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 5
+0 CEDS_C3H8_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 5
+0 CEDS_C4H10_RCOO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_rcoo  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C5H12_RCOO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_rcoo 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C6H14_RCOO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_rcoo  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 5
+0 CEDS_C2H4_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 5
+0 CEDS_PRPE_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 5
+0 CEDS_C2H2_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 5
+0 CEDS_BENZ_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 5
+0 CEDS_TOLU_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 5
+0 CEDS_XYLE_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 5
+0 CEDS_CH2O_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 5
+0 CEDS_ALD2_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 5
+0 CEDS_MEK_RCOO    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_rcoo           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 5
+0 CEDS_HCOOH_RCOO  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_rcoo         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 5
+
 )))CEDS
 
 #==============================================================================
@@ -1530,12 +1633,12 @@ Warnings:                    1
 0 CEDS_MOH_IND    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_ind           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
 0 CEDS_EOH_IND    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
 0 CEDS_ROH_IND    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
-0 CEDS_MOH_TRA    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_tra           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
-0 CEDS_EOH_TRA    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
-0 CEDS_ROH_TRA    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
-0 CEDS_MOH_RCO    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_rco           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
-0 CEDS_EOH_RCO    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
-0 CEDS_ROH_RCO    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
+0 CEDS_MOH_ROAD    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_road           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
+0 CEDS_EOH_ROAD    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
+0 CEDS_ROH_ROAD    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
+0 CEDS_MOH_RCOR    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_rcor           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
+0 CEDS_EOH_RCOR    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
+0 CEDS_ROH_RCOR    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
 0 CEDS_MOH_SLV    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_slv           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
 0 CEDS_EOH_SLV    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
 0 CEDS_ROH_SLV    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
@@ -1546,122 +1649,179 @@ Warnings:                    1
 0 CEDS_C2H6_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_agr          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
 0 CEDS_C2H6_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_ene          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
 0 CEDS_C2H6_IND   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_ind          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
-0 CEDS_C2H6_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_tra          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
-0 CEDS_C2H6_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_rco          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
+0 CEDS_C2H6_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_road          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
+0 CEDS_C2H6_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_rcor          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
 0 CEDS_C2H6_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_slv          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
 0 CEDS_C2H6_WST   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_wst          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
 
 0 CEDS_C3H8_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_agr          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
 0 CEDS_C3H8_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_ene          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
 0 CEDS_C3H8_IND   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_ind          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
-0 CEDS_C3H8_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_tra          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
-0 CEDS_C3H8_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_rco          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
+0 CEDS_C3H8_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_road          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
+0 CEDS_C3H8_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_rcor          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
 0 CEDS_C3H8_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_slv          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
 0 CEDS_C3H8_WST   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_wst          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
 
 0 CEDS_C4H10_AGR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_agr  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C4H10_ENE  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_ene  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C4H10_IND  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_ind  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
-0 CEDS_C4H10_TRA  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_tra  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
-0 CEDS_C4H10_RCO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_rco  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C4H10_ROAD  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_road  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C4H10_RCOR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_rcor  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C4H10_SLV  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_slv  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C4H10_WST  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_wst  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 
 0 CEDS_C5H12_AGR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_agr 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C5H12_ENE  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_ene 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C5H12_IND  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_ind 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
-0 CEDS_C5H12_TRA  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_tra 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
-0 CEDS_C5H12_RCO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_rco 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C5H12_ROAD  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_road 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C5H12_RCOR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_rcor 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C5H12_SLV  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_slv 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C5H12_WST  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_wst 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 
 0 CEDS_C6H14_AGR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_agr  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C6H14_ENE  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_ene  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C6H14_IND  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_ind  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
-0 CEDS_C6H14_TRA  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_tra  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
-0 CEDS_C6H14_RCO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_rco  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C6H14_ROAD  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_road  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C6H14_RCOR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_rcor  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C6H14_SLV  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_slv  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 0 CEDS_C6H14_WST  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_wst  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
 
 0 CEDS_C2H4_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_agr          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
 0 CEDS_C2H4_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_ene          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
 0 CEDS_C2H4_IND   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_ind          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
-0 CEDS_C2H4_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_tra          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
-0 CEDS_C2H4_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_rco          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
+0 CEDS_C2H4_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_road          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
+0 CEDS_C2H4_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_rcor          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
 0 CEDS_C2H4_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_slv          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
 0 CEDS_C2H4_WST   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_wst          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
 
 0 CEDS_PRPE_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_agr          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
 0 CEDS_PRPE_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_ene          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
 0 CEDS_PRPE_IND   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_ind          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
-0 CEDS_PRPE_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_tra          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
-0 CEDS_PRPE_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_rco          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
+0 CEDS_PRPE_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_road          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
+0 CEDS_PRPE_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_rcor          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
 0 CEDS_PRPE_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_slv          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
 0 CEDS_PRPE_WST   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_wst          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
 
 0 CEDS_C2H2_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_agr          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
 0 CEDS_C2H2_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_ene          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
 0 CEDS_C2H2_IND   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_ind          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
-0 CEDS_C2H2_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_tra          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
-0 CEDS_C2H2_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_rco          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
+0 CEDS_C2H2_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_road          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
+0 CEDS_C2H2_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_rcor          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
 0 CEDS_C2H2_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_slv          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
 0 CEDS_C2H2_WST   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_wst          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
 
 0 CEDS_BENZ_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_agr          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
 0 CEDS_BENZ_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_ene          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
 0 CEDS_BENZ_IND   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_ind          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
-0 CEDS_BENZ_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_tra          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
-0 CEDS_BENZ_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_rco          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
+0 CEDS_BENZ_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_road          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
+0 CEDS_BENZ_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_rcor          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
 0 CEDS_BENZ_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_slv          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
 0 CEDS_BENZ_WST   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_wst          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
 
 0 CEDS_TOLU_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_agr          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
 0 CEDS_TOLU_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_ene          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
 0 CEDS_TOLU_IND   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_ind          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
-0 CEDS_TOLU_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_tra          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
-0 CEDS_TOLU_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_rco          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
+0 CEDS_TOLU_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_road          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
+0 CEDS_TOLU_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_rcor          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
 0 CEDS_TOLU_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_slv          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
 0 CEDS_TOLU_WST   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_wst          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
 
 0 CEDS_XYLE_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_agr          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
 0 CEDS_XYLE_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_ene          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
 0 CEDS_XYLE_IND   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_ind          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
-0 CEDS_XYLE_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_tra          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
-0 CEDS_XYLE_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_rco          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
+0 CEDS_XYLE_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_road          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
+0 CEDS_XYLE_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_rcor          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
 0 CEDS_XYLE_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_slv          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
 0 CEDS_XYLE_WST   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_wst          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
 
 0 CEDS_CH2O_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_agr          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
 0 CEDS_CH2O_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_ene          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
 0 CEDS_CH2O_IND   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_ind          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
-0 CEDS_CH2O_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_tra          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
-0 CEDS_CH2O_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_rco          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
+0 CEDS_CH2O_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_road          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
+0 CEDS_CH2O_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_rcor          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
 0 CEDS_CH2O_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_slv          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
 0 CEDS_CH2O_WST   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_wst          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
 
 0 CEDS_ALD2_AGR   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_agr          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
 0 CEDS_ALD2_ENE   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_ene          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
 0 CEDS_ALD2_IND   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_ind          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
-0 CEDS_ALD2_TRA   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_tra          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
-0 CEDS_ALD2_RCO   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_rco          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
+0 CEDS_ALD2_ROAD   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_road          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
+0 CEDS_ALD2_RCOR   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_rcor          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
 0 CEDS_ALD2_SLV   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_slv          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
 0 CEDS_ALD2_WST   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_wst          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
 
 0 CEDS_MEK_AGR    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_agr           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
 0 CEDS_MEK_ENE    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_ene           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
 0 CEDS_MEK_IND    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_ind           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
-0 CEDS_MEK_TRA    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_tra           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
-0 CEDS_MEK_RCO    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_rco           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
+0 CEDS_MEK_ROAD    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_road           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
+0 CEDS_MEK_RCOR    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_rcor           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
 0 CEDS_MEK_SLV    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_slv           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
 0 CEDS_MEK_WST    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_wst           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
 
 0 CEDS_HCOOH_AGR  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_agr         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
 0 CEDS_HCOOH_ENE  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_ene         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
 0 CEDS_HCOOH_IND  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_ind         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
-0 CEDS_HCOOH_TRA  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_tra         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
-0 CEDS_HCOOH_RCO  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_rco         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
+0 CEDS_HCOOH_ROAD  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_road         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
+0 CEDS_HCOOH_RCOR  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_rcor         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
 0 CEDS_HCOOH_SLV  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_slv         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
 0 CEDS_HCOOH_WST  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_wst         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
+
+0 CEDS_MOH_NRTR    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_nrtr           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
+0 CEDS_EOH_NRTR    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
+0 CEDS_ROH_NRTR    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
+0 CEDS_C2H6_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
+0 CEDS_C3H8_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
+0 CEDS_C4H10_NRTR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_nrtr  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C5H12_NRTR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_nrtr 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C6H14_NRTR  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_nrtr  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C2H4_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
+0 CEDS_PRPE_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
+0 CEDS_C2H2_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
+0 CEDS_BENZ_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
+0 CEDS_TOLU_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
+0 CEDS_XYLE_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
+0 CEDS_CH2O_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
+0 CEDS_ALD2_NRTR   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_nrtr          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
+0 CEDS_MEK_NRTR    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_nrtr           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
+0 CEDS_HCOOH_NRTR  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_nrtr         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
+
+0 CEDS_MOH_RCOC    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_rcoc           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
+0 CEDS_EOH_RCOC    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
+0 CEDS_ROH_RCOC    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
+0 CEDS_C2H6_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
+0 CEDS_C3H8_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
+0 CEDS_C4H10_RCOC  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_rcoc  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C5H12_RCOC  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_rcoc 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C6H14_RCOC  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_rcoc  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C2H4_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
+0 CEDS_PRPE_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
+0 CEDS_C2H2_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
+0 CEDS_BENZ_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
+0 CEDS_TOLU_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
+0 CEDS_XYLE_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
+0 CEDS_CH2O_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
+0 CEDS_ALD2_RCOC   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_rcoc          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
+0 CEDS_MEK_RCOC    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_rcoc           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
+0 CEDS_HCOOH_RCOC  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_rcoc         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
+
+0 CEDS_MOH_RCOO    /McDuffie20/CEDS/2020_v1/$YYYY/EOH-em-total-anthro_CEDS_$YYYY.nc           EOH_rcoo           1970-2017/1-12/1/0 C xy kg/m2/s MOH   26/90     1 5
+0 CEDS_EOH_RCOO    -                                                                    -                 -                  - -  -       EOH   26/91     1 5
+0 CEDS_ROH_RCOO    -                                                                    -                 -                  - -  -       ROH   26/92     1 5
+0 CEDS_C2H6_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H6-em-total-anthro_CEDS_$YYYY.nc          C2H6_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s C2H6  26        1 2
+0 CEDS_C3H8_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/C3H8-em-total-anthro_CEDS_$YYYY.nc          C3H8_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s C3H8  26        1 2
+0 CEDS_C4H10_RCOO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_butanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_butanes_rcoo  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C5H12_RCOO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_pentanes-em-total-anthro_CEDS_$YYYY.nc ALK4_pentanes_rcoo 1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C6H14_RCOO  /McDuffie20/CEDS/2020_v1/$YYYY/ALK4_hexanes-em-total-anthro_CEDS_$YYYY.nc  ALK4_hexanes_rcoo  1970-2017/1-12/1/0 C xy kg/m2/s ALK4  26        1 2
+0 CEDS_C2H4_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H4-em-total-anthro_CEDS_$YYYY.nc          C2H4_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s C2H4  26        1 2
+0 CEDS_PRPE_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/PRPE-em-total-anthro_CEDS_$YYYY.nc          PRPE_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s PRPE  26        1 2
+0 CEDS_C2H2_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/C2H2-em-total-anthro_CEDS_$YYYY.nc          C2H2_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s C2H2  26        1 2
+0 CEDS_BENZ_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/BENZ-em-total-anthro_CEDS_$YYYY.nc          BENZ_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s BENZ  26        1 2
+0 CEDS_TOLU_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/TOLU-em-total-anthro_CEDS_$YYYY.nc          TOLU_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s TOLU  26        1 2
+0 CEDS_XYLE_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/XYLE-em-total-anthro_CEDS_$YYYY.nc          XYLE_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s XYLE  26        1 2
+0 CEDS_CH2O_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/CH2O-em-total-anthro_CEDS_$YYYY.nc          CH2O_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s CH2O  26        1 2
+0 CEDS_ALD2_RCOO   /McDuffie20/CEDS/2020_v1/$YYYY/ALD2-em-total-anthro_CEDS_$YYYY.nc          ALD2_rcoo          1970-2017/1-12/1/0 C xy kg/m2/s ALD2  26        1 2
+0 CEDS_MEK_RCOO    /McDuffie20/CEDS/2020_v1/$YYYY/MEK-em-total-anthro_CEDS_$YYYY.nc           MEK_rcoo           1970-2017/1-12/1/0 C xy kg/m2/s MEK   26        1 2
+0 CEDS_HCOOH_RCOO  /McDuffie20/CEDS/2020_v1/$YYYY/HCOOH-em-total-anthro_CEDS_$YYYY.nc         HCOOH_rcoo         1970-2017/1-12/1/0 C xy kg/m2/s HCOOH 26        1 2
 )))EDGARv43
 
 #==============================================================================
