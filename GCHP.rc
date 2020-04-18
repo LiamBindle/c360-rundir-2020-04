@@ -1,37 +1,37 @@
 # Atmospheric Model Configuration Parameters
 # ------------------------------------------
-NX: 1
-NY: 6
+NX: 15
+NY: 120
 
 GCHP.GRID_TYPE: Cubed-Sphere
-GCHP.GRIDNAME: PE24x144-CF
+GCHP.GRIDNAME: PE360x2160-CF
 GCHP.NF: 6
-GCHP.IM_WORLD: 24
-GCHP.IM: 24
-GCHP.JM: 144
+GCHP.IM_WORLD: 360
+GCHP.IM: 360
+GCHP.JM: 2160
 GCHP.LM: 72
 
 # For FV advection do not use grid comp name prefix
-IM: 24
-JM: 144
+IM: 360
+JM: 2160
 LM: 72
 
 GEOSChem_CTM: 1
 
 AdvCore_Advection: 1
 	DYCORE: OFF
-  HEARTBEAT_DT: 600
+  HEARTBEAT_DT: 300
 
-SOLAR_DT: 600
-IRRAD_DT: 600
-RUN_DT:   600
-GIGCchem_DT: 1200
-DYNAMICS_DT: 600
+SOLAR_DT: 300
+IRRAD_DT: 300
+RUN_DT:   300
+GIGCchem_DT: 600
+DYNAMICS_DT: 300
 
 SOLARAvrg: 0
 IRRADAvrg: 0
 
-GIGCchem_REFERENCE_TIME: 121000
+GIGCchem_REFERENCE_TIME: 121001
 
 # Print Resource Parameters (0: Non-Default values, 1: ALL values)
 #-----------------------------------------------------------------
@@ -54,14 +54,14 @@ BKG_FREQUENCY: 0
 #                             Can exceed 24 hours (e.g. 1680000 for 7 days)
 # Record ref date (YYYYMMDD): Reference date; set to before sim start date
 # Record ref time (HHMMSS)  : Reference time 
-RECORD_FREQUENCY: 1680000 
-RECORD_REF_DATE: 20000101
+RECORD_FREQUENCY: 720000
+RECORD_REF_DATE: 20180601
 RECORD_REF_TIME: 000000
 
 # Chemistry/AEROSOL Model Restart Files
 # Enter +none for GIGCchem_INTERNAL_RESTART_FILE not use an initial restart file
 # -------------------------------------
-GIGCchem_INTERNAL_RESTART_FILE:     +initial_GEOSChem_rst.c24_benchmark.nc
+GIGCchem_INTERNAL_RESTART_FILE:     +C360_restart.nc
 GIGCchem_INTERNAL_RESTART_TYPE:     pnc4
 GIGCchem_INTERNAL_CHECKPOINT_FILE:  gcchem_internal_checkpoint
 GIGCchem_INTERNAL_CHECKPOINT_TYPE:  pnc4

@@ -1,6 +1,6 @@
 EXPID:  OutputDir/GCHP
 EXPDSC: GEOS-Chem_devel
-CoresPerNode: 6
+CoresPerNode: 30
 VERSION: 1
 
 #==============================================================================
@@ -96,8 +96,8 @@ COLLECTIONS: 'AerosolMass',
 # Emissions (see HEMCO_Diagn.rc for additional config settings)
   Emissions.template:         '%y4%m2%d2_%h2%n2z.nc4',
   Emissions.format:           'CFIO',
-  Emissions.frequency:        010000
-  Emissions.duration:         010000
+  Emissions.frequency:        7440000
+  Emissions.duration:         7440000
   Emissions.mode:             'time-averaged'
   Emissions.fields:           'EmisACET_Total       ', 'GIGCchem',
                               'EmisACET_Anthro      ', 'GIGCchem',
@@ -533,8 +533,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   AerosolMass.template:       '%y4%m2%d2_%h2%n2z.nc4',
   AerosolMass.format:         'CFIO',
-  AerosolMass.frequency:      010000
-  AerosolMass.duration:       010000
+  AerosolMass.frequency:      7440000
+  AerosolMass.duration:       7440000
   AerosolMass.mode:           'time-averaged'
   AerosolMass.fields:         'AerMassASOA                  ', 'GIGCchem',
                               'AerMassBC                    ', 'GIGCchem',
@@ -567,8 +567,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   Aerosols.template:          '%y4%m2%d2_%h2%n2z.nc4',
   Aerosols.format:            'CFIO',
-  Aerosols.frequency:         010000
-  Aerosols.duration:          010000
+  Aerosols.frequency:         7440000
+  Aerosols.duration:          7440000
   Aerosols.mode:              'time-averaged'
   Aerosols.fields:            'AODHygWL1_SO4                 ', 'GIGCchem',
                               'AODHygWL1_BCPI                ', 'GIGCchem',
@@ -677,8 +677,8 @@ COLLECTIONS: 'AerosolMass',
 # species as needed (advected only)
   Budget.template:            '%y4%m2%d2_%h2%n2z.nc4',
   Budget.format:              'CFIO',
-  Budget.frequency:           010000
-  Budget.duration:            010000
+  Budget.frequency:           7440000
+  Budget.duration:            7440000
   Budget.mode:                'time-averaged'
   Budget.fields:              'BudgetEmisDryDepFull_O3  ', 'GIGCchem',
                               'BudgetEmisDryDepTrop_O3  ', 'GIGCchem',
@@ -705,8 +705,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   CloudConvFlux.template:     '%y4%m2%d2_%h2%n2z.nc4',
   CloudConvFlux.format:       'CFIO',
-  CloudConvFlux.frequency:    010000
-  CloudConvFlux.duration:     010000
+  CloudConvFlux.frequency:    7440000
+  CloudConvFlux.duration:     7440000
   CloudConvFlux.mode:         'time-averaged'
   CloudConvFlux.fields:       'CloudConvFlux_NO       ', 'GIGCchem',
                               'CloudConvFlux_O3       ', 'GIGCchem',
@@ -900,8 +900,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   ConcAboveSfc.template:      '%y4%m2%d2_%h2%n2z.nc4',
   ConcAboveSfc.format:        'CFIO',
-  ConcAboveSfc.frequency:     010000
-  ConcAboveSfc.duration:      010000
+  ConcAboveSfc.frequency:     7440000
+  ConcAboveSfc.duration:      7440000
   ConcAboveSfc.mode:          'instantaneous'
   ConcAboveSfc.fields:        'DryDepRaALT1                  ', 'GIGCchem',
                               'DryDepVelForALT1_O3           ', 'GIGCchem',
@@ -921,8 +921,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   ConcAfterChem.template:     '%y4%m2%d2_%h2%n2z.nc4',
   ConcAfterChem.format:       'CFIO',
-  ConcAfterChem.frequency:    010000
-  ConcAfterChem.duration:     010000
+  ConcAfterChem.frequency:    7440000
+  ConcAfterChem.duration:     7440000
   ConcAfterChem.mode:         'time-averaged'
   ConcAfterChem.fields:       'OHconcAfterChem               ', 'GIGCchem',
                               'HO2concAfterChem              ', 'GIGCchem',
@@ -938,8 +938,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   DryDep.template:            '%y4%m2%d2_%h2%n2z.nc4',
   DryDep.format:              'CFIO',
-  DryDep.frequency:           010000
-  DryDep.duration:            010000
+  DryDep.frequency:           7440000
+  DryDep.duration:            7440000
   DryDep.mode:                'time-averaged'
   DryDep.fields:              'DryDepVel_O3           ', 'GIGCchem',
                               'DryDepVel_PAN          ', 'GIGCchem',
@@ -1179,8 +1179,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   JValues.template:           '%y4%m2%d2_%h2%n2z.nc4',
   JValues.format:             'CFIO',
-  JValues.frequency:          010000
-  JValues.duration:           010000
+  JValues.frequency:          7440000
+  JValues.duration:           7440000
   JValues.mode:               'time-averaged'
   JValues.fields:             'Jval_O3O3P              ', 'GIGCchem',
                               'Jval_O3O1D              ', 'GIGCchem',
@@ -1304,8 +1304,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   KppDiags.template:          '%y4%m2%d2_%h2%n2z.nc4',
   KppDiags.format:            'CFIO',
-  KppDiags.frequency:         010000
-  KppDiags.duration:          010000
+  KppDiags.frequency:         7440000
+  KppDiags.duration:          7440000
   KppDiags.mode:              'time-averaged'
   KppDiags.fields:            'KppIntCounts                  ', 'GIGCchem',
                               'KppJacCounts                  ', 'GIGCchem',
@@ -1325,8 +1325,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   LevelEdgeDiags.template:    '%y4%m2%d2_%h2%n2z.nc4',
   LevelEdgeDiags.format:      'CFIO',
-  LevelEdgeDiags.frequency:   010000
-  LevelEdgeDiags.duration:    010000
+  LevelEdgeDiags.frequency:   7440000
+  LevelEdgeDiags.duration:    7440000
   LevelEdgeDiags.mode:        'time-averaged'
   LevelEdgeDiags.fields:      'Met_CMFMC                     ', 'GIGCchem',
                               'Met_PEDGE                     ', 'GIGCchem',
@@ -1345,8 +1345,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   ProdLoss.template:          '%y4%m2%d2_%h2%n2z.nc4',
   ProdLoss.format:            'CFIO',
-  ProdLoss.frequency:         010000
-  ProdLoss.duration:          010000
+  ProdLoss.frequency:         7440000
+  ProdLoss.duration:          7440000
   ProdLoss.mode:              'time-averaged'
   ProdLoss.fields:            'Prod_SO4                   ', 'GIGCchem',
                               'Prod_CO                    ', 'GIGCchem',
@@ -1377,8 +1377,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   SpeciesConc.template:   '%y4%m2%d2_%h2%n2z.nc4',
   SpeciesConc.format:     'CFIO',
-  SpeciesConc.frequency:  010000
-  SpeciesConc.duration:   010000
+  SpeciesConc.frequency:  7440000
+  SpeciesConc.duration:   7440000
   SpeciesConc.mode:       'time-averaged'
   SpeciesConc.fields:     'SpeciesConc_NO         ', 'GIGCchem',
                           'SpeciesConc_O3         ', 'GIGCchem',
@@ -1618,8 +1618,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   StateChm.template:          '%y4%m2%d2_%h2%n2z.nc4',
   StateChm.format:            'CFIO',
-  StateChm.frequency:         010000
-  StateChm.duration:          010000
+  StateChm.frequency:         7440000
+  StateChm.duration:          7440000
   StateChm.mode:              'time-averaged'
   StateChm.fields:            'Chem_phSav                    ', 'GIGCchem',
                               'Chem_HplusSav                 ', 'GIGCchem',
@@ -1645,8 +1645,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   StateMet_avg.template:      '%y4%m2%d2_%h2%n2z.nc4',
   StateMet_avg.format:        'CFIO',
-  StateMet_avg.frequency:     010000
-  StateMet_avg.duration:      010000
+  StateMet_avg.frequency:     7440000
+  StateMet_avg.duration:      7440000
   StateMet_avg.mode:          'time-averaged'
   StateMet_avg.fields:        'Met_AD              ', 'GIGCchem',
                               'Met_AIRDEN          ', 'GIGCchem',
@@ -1742,8 +1742,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   StateMet_inst.template:     '%y4%m2%d2_%h2%n2z.nc4',
   StateMet_inst.format:       'CFIO',
-  StateMet_inst.frequency:    010000
-  StateMet_inst.duration:     010000
+  StateMet_inst.frequency:    7440000
+  StateMet_inst.duration:     7440000
   StateMet_inst.mode:         'instantaneous'
   StateMet_inst.fields:       'Met_AD               ', 'GIGCchem',
                               #'Met_AIRDEN          ', 'GIGCchem',
@@ -1838,8 +1838,8 @@ COLLECTIONS: 'AerosolMass',
 #==============================================================================
   WetLossConv.template:       '%y4%m2%d2_%h2%n2z.nc4',
   WetLossConv.format:         'CFIO',
-  WetLossConv.frequency:      010000
-  WetLossConv.duration:       010000
+  WetLossConv.frequency:      7440000
+  WetLossConv.duration:       7440000
   WetLossConv.mode:           'time-averaged'
   WetLossConv.fields:         'WetLossConv_HNO3          ', 'GIGCchem',
                               'WetLossConv_H2O2          ', 'GIGCchem',
@@ -2054,8 +2054,8 @@ COLLECTIONS: 'AerosolMass',
 # Loss due to rainout and washout (per deposited species)
   WetLossLS.template:         '%y4%m2%d2_%h2%n2z.nc4',
   WetLossLS.format:           'CFIO',
-  WetLossLS.frequency:        010000
-  WetLossLS.duration:         010000
+  WetLossLS.frequency:        7440000
+  WetLossLS.duration:         7440000
   WetLossLS.mode:             'time-averaged'
   WetLossLS.fields:           'WetLossLS_HNO3     ', 'GIGCchem',
                               'WetLossLS_H2O2     ', 'GIGCchem',

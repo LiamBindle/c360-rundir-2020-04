@@ -9,8 +9,8 @@ Simulation name         : benchmark
 Turn on debug printout? : F
 ------------------------+------------------------------------------------------
 %%% TIMESTEP MENU %%%   :
-Tran/conv timestep [sec]: 600
-Chem/emis timestep [sec]: 1200
+Tran/conv timestep [sec]: 300
+Chem/emis timestep [sec]: 600
 ------------------------+------------------------------------------------------
 %%% ADVECTED SPECIES MENU %%%:
 Species name            : NO

@@ -74,13 +74,13 @@ Z0       '1'         N Y F0;003000 none none         Z0M        ./MetDir/%y4/%m2
 
 # --- Surface pressure, 3-hr instantaneous ---
 PS1      hPa N Y 0         none 1.0  PS         ./MetDir/%y4/%m2/GEOSFP.%y4%m2%d2.I3.025x03125.nc
-PS2      hPa N Y 0;001000  none 1.0  PS         ./MetDir/%y4/%m2/GEOSFP.%y4%m2%d2.I3.025x03125.nc
+PS2      hPa N Y 0;000500  none 1.0  PS         ./MetDir/%y4/%m2/GEOSFP.%y4%m2%d2.I3.025x03125.nc
 
 # --- 3D variables, 3-hr instantaneous ---
 SPHU1    'kg kg-1'   N Y 0         none none         QV         ./MetDir/%y4/%m2/GEOSFP.%y4%m2%d2.I3.025x03125.nc
-SPHU2    'kg kg-1'   N Y 0;001000  none none         QV         ./MetDir/%y4/%m2/GEOSFP.%y4%m2%d2.I3.025x03125.nc
+SPHU2    'kg kg-1'   N Y 0;000500  none none         QV         ./MetDir/%y4/%m2/GEOSFP.%y4%m2%d2.I3.025x03125.nc
 TMPU1    'K'         N Y 0         none none         T          ./MetDir/%y4/%m2/GEOSFP.%y4%m2%d2.I3.025x03125.nc
-TMPU2    'K'         N Y 0;001000  none none         T          ./MetDir/%y4/%m2/GEOSFP.%y4%m2%d2.I3.025x03125.nc
+TMPU2    'K'         N Y 0;000500  none none         T          ./MetDir/%y4/%m2/GEOSFP.%y4%m2%d2.I3.025x03125.nc
 
 # --- 3D variables, 3-hr averaged ---
 QI       '1'         N Y F0;013000 none none         QI         ./MetDir/%y4/%m2/GEOSFP.%y4%m2%d2.A3cld.025x03125.nc
