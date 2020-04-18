@@ -1,0 +1,10 @@
+This run directory was created with GEOS-Chem/run/GCHPctm/createRunDir.sh.
+ 
+GEOS-Chem repository version information:
+
+  Remote URL: https://github.com/geoschem/GCHPctm.git
+  Branch: HEAD
+  Commit: Update to MAPL 2.0.2 to fix coarse input file handling bug
+  Date: Tue Mar 10 12:00:51 2020 -0400
+  User: Lizzie Lundgren
+  Hash: c63d51b
