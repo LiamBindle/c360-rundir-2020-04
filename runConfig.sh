@@ -13,9 +13,9 @@
 # Total cores must be divisible by 6. Cores per node must equal number
 # of cores divided by number of nodes. Make sure you have these
 # resources available.
-TOTAL_CORES=48
-NUM_NODES=3
-NUM_CORES_PER_NODE=16
+TOTAL_CORES=1800
+NUM_NODES=60
+NUM_CORES_PER_NODE=30
 
 # Cores are distributed across each of the six cubed sphere faces using
 # configurable parameters NX and NY. Each face is divided into NX by NY/6
@@ -50,7 +50,7 @@ NY=6 # Ignore if NXNY_AUTO=ON
 #------------------------------------------------
 #   Internal Cubed Sphere Resolution
 #------------------------------------------------
-CS_RES=48 # 24 ~ 4x5, 48 ~ 2x2.5, 90 ~ 1x1.25, 180 ~ 1/2 deg, 360 ~ 1/4 deg
+CS_RES=360 # 24 ~ 4x5, 48 ~ 2x2.5, 90 ~ 1x1.25, 180 ~ 1/2 deg, 360 ~ 1/4 deg
 
 #------------------------------------------------
 #    Debug Options
@@ -85,9 +85,9 @@ MEMORY_DEBUG_LEVEL=0
 # Use this feature with the multi-segmented runs / monthly diagnostics
 # section below. See more information about this on the GCHP wiki.
 #
-Start_Time="20160701 000000"
-End_Time="20160801 000000"
-Duration="00000100 000000"
+Start_Time="20180601 000000"
+End_Time="20190701 000000"
+Duration="00010100 000000"
 
 #------------------------------------------------
 #    Diagnostics
@@ -188,7 +188,7 @@ WetLossLS_mode=${common_mode}
 # on gcgrid do not contain HEMCO variables which will have the same effect
 # as turning the HEMCO restart file option off in GC classic. However, all 
 # output restart files will contain HEMCO restart variables for your next run.
-INITIAL_RESTART=initial_GEOSChem_rst.c${CS_RES}_benchmark.nc
+INITIAL_RESTART=C360_restart.nc
 
 # You can specify a custom initial restart file here to overwrite:
 # INITIAL_RESTART=your_restart_filename_here
@@ -203,7 +203,7 @@ INITIAL_RESTART=initial_GEOSChem_rst.c${CS_RES}_benchmark.nc
 # digits for the hours string is permitted (e.g. 1680000 for 7 days).
 # Setting the frequency to 000000 will turn off this feature by setting
 # it to a very large number.
-Checkpoint_Freq="000000"
+Checkpoint_Freq="720000"
 
 #------------------------------------------------
 #    Turn Components On/Off
